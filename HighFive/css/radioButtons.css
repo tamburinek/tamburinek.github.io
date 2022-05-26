@@ -1,0 +1,76 @@
+/* css file fot picking colors */
+.radio-toolbar {
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  
+  .radio-toolbar label {
+      display: inline-block;
+      padding: 10px 20px;
+      font-family: sans-serif, Arial;
+      font-size: 16px;
+      border: 2px solid black;
+      border-radius: 40px;
+      height: 40px;
+      width: 40px;
+  }
+  
+  .radio-toolbar input[type="radio"]:checked + label {
+      border-color: white !important;
+  }
+
+  .radio-toolbar input[type="radio"]:checked + #whiteLabel {
+    border-color: salmon !important;
+}
+
+.radioLabel{
+    flex-grow: 0;
+}
+
+.radio-toolbar #blueLabel {
+    background-color: #001233;
+}
+
+.radio-toolbar #lightBlueLabel {
+    background-color: #0A9396;
+}
+
+.radio-toolbar #whiteLabel {
+    background-color: white;
+}
+
+.radio-toolbar #purpleLabel {
+    background-color: #FFA69E;
+}
+
+.radio-toolbar #yellowLabel {
+    background-color: yellow;
+}
+
+.radio-toolbar #blakcLabel {
+    background-color: #0A0908;
+    border: 2px solid rgb(57, 56, 56);
+}
+
+.radio-toolbar #redLabel {
+    background-color: #9B2226;
+}
+
+.radio-toolbar #greenLabel {
+    background-color: #155D27;
+}
+
+.radio-toolbar #brownLabel {
+    background-color: #5E503F;
+}
+
+.radio-toolbar #orangeLabel {
+    background-color: #EE9B00;
+}
