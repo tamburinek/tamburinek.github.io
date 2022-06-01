@@ -115,8 +115,8 @@ const questions = [
   {
     question: 'Máš zájem poznat skvělého člověka?',
     answers: [
-      { text: 'Ano jsem štěstím bez sebe', correct: false },
-      { text: 'Jistě pal to do mě', correct: true }
+      { text: 'Samozřejmě', correct: false },
+      { text: 'Jistě', correct: true }
     ]
   },
   {
