@@ -1,0 +1,128 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  /*font-family: Gotham Rounded;*/
+  /*font-family: 'Comfortaa', cursive;*/
+  /*font-family: 'Assistant', sans-serif;*/
+  font-family: 'Jost', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  width: 100vw;
+  height: 100vh;
+  /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: 'Comfortaa', cursive;
+
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-container {
+  /*background: #000;*/
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+.avatar-text {
+  /*width: 80%;*/
+  padding: .3rem;
+  position: relative;
+  border: #FFFFFF solid 1px;
+  color: aliceblue;
+  /*background-color: #FFFFFF;*/
+  border-radius: 0 .5rem .5rem .5rem;
+}
+
+img {
+  width: 6rem;
+  border-radius: 500px 500px 0 0;
+}
+
+.speech {
+  font-size: 1.5rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+#question{
+  font-size: 30px;
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+  width: 90%;
+  max-width: 80%;
+  height: 400px;
+  /*background-color: white;*/
+  border-radius: .8rem;
+  padding: 10px;
+  color: white;
+  /*box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

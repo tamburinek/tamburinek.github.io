@@ -1,9 +1,9 @@
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
-const questionElement = document.getElementById('question')
+const questionElement = document.querySelector('.speech')
 const answerButtonsElement = document.getElementById('answer-buttons')
-const hOne = document.getElementById("h1")
+const hOne = document.querySelector(".speech")
 // const hOne2 = document.getElementById("second")
 const ig = document.getElementById("ig")
 
@@ -16,7 +16,7 @@ nextButton.addEventListener('click', () => {
 })
 
 function startGame() {
-  hOne.classList.add('hide')
+  // hOne.classList.add('hide')
   startButton.classList.add('hide')
   shuffledQuestions = questions
   currentQuestionIndex = 0
@@ -34,6 +34,7 @@ function showQuestion(question) {
   question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText = answer.text
+    button.classList.add('btn-answer')
     button.classList.add('btn')
     button.addEventListener('click', selectAnswer)
     answerButtonsElement.appendChild(button)
