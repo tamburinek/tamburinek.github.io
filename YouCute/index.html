@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="styles.css" rel="stylesheet">
-  <script defer src="script.js"></script>
-  <title>Quiz App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles/button.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Comfortaa&family=Jost:wght@300&display=swap"
+          rel="stylesheet">
+
+    <script defer src="script.js"></script>
+    <title>Quiz App</title>
 </head>
 <body>
-  <div class="container">
-    <h1 id="h1">Vítej na této stránce. Možná ti bylo řečeno, že je to součást baklářské práce - well anyway pravda je trochu jinde, ale pro zjištění skutečnosti musíš projít tento quiz.</h1>
+<main>
+    <header>
 
-    <button id="ig" class="start-btn btn hide" class="hide">IG: tamburinek</button>
-    <div id="question-container" class="hide">
-      <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
-        <button class="btn">Answer 5</button>
-        <button class="btn">Answer 6</button>
-        <button class="btn">Answer 7</button>
-        <button class="btn">Answer 8</button>
-        <button class="btn">Answer 9</button>
-        <button class="btn">Answer 10</button>
-        <button class="btn">Answer 11</button>
-        <button class="btn">Answer 12</button>
-      </div>
+    </header>
+    <section class="avatar-container">
+        <img src="resources/hello.gif" alt="">
+        <div class="avatar-text">
+            <p class="speech"> Vítej na této stránce. Možná ti bylo řečeno, že je to součást baklářské práce - well anyway
+                pravda je trochu jinde, ale pro zjištění skutečnosti musíš projít tento quiz.</p>
+        </div>
+
+    </section>
+    <div class="container">
+        <button id="ig" class="start-btn btn hide">IG: tamburinek</button>
+        <div id="question-container" class="hide">
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn-answer">Answer 1</button>
+                <button class="btn-answer">Answer 2</button>
+                <button class="btn-answer">Answer 3</button>
+                <button class="btn-answer">Answer 4</button>
+                <button class="btn-answer">Answer 5</button>
+                <button class="btn-answer">Answer 6</button>
+                <button class="btn-answer">Answer 7</button>
+                <button class="btn-answer">Answer 8</button>
+                <button class="btn-answer">Answer 9</button>
+                <button class="btn-answer">Answer 10</button>
+                <button class="btn-answer">Answer 11</button>
+                <button class="btn-answer">Answer 12</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
     </div>
-    <div class="controls">
-      <button id="start-btn" class="start-btn btn">Start</button>
-      <button id="next-btn" class="next-btn btn hide">Next</button>
-    </div>
-  </div>
+</main>
+
 </body>
 </html>

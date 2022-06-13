@@ -1,0 +1,93 @@
+.btn {
+    min-width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.start-btn, .next-btn {
+    /*background-image: linear-gradient(*/
+    /*        to right,*/
+    /*        #0ba360,*/
+    /*        #3cba92,*/
+    /*        #30dd8a,*/
+    /*        #2bb673*/
+    /*);*/
+    /*box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);*/
+    /*background-image: linear-gradient(*/
+    /*        to right,*/
+    /*        #f5ce62,*/
+    /*        #e43603,*/
+    /*        #fa7199,*/
+    /*        #e85a19*/
+    /*);*/
+    /*box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);*/
+
+    border-color: transparent;
+    background-color: #fff;
+    color: #000;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.bn37:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+
+.btn-answer {
+    background-image: linear-gradient(
+            to right,
+            #eb3941,
+            #f15e64,
+            #e14e53,
+            #e2373f
+    );
+    box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+    /*background-image: linear-gradient(*/
+    /*        to right,*/
+    /*        #6253e1,*/
+    /*        #852d91,*/
+    /*        #a3a1ff,*/
+    /*        #f24645*/
+    /*);*/
+    /*box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);*/
+    /*background-image: linear-gradient(*/
+    /*        to right,*/
+    /*        #0ba360,*/
+    /*        #3cba92,*/
+    /*        #30dd8a,*/
+    /*        #2bb673*/
+    /*);*/
+    /*box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);*/
+}
+/*    background-image: linear-gradient(*/
+/*            to right,*/
+/*            #29323c,*/
+/*            #485563,*/
+/*            #2b5876,*/
+/*            #4e4376*/
+/*    );*/
+/*    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);*/
+/*}*/
